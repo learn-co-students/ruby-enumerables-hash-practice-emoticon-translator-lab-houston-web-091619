@@ -13,7 +13,7 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  emoticons = load_library(path) #call load_library
+  emoticons = load_library(path) 
   result = emoticons["get_emoticon"][emoticon]
   if result
     result
@@ -24,7 +24,7 @@ end
 
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
-  result = emoticons["get_meaning"][emoticon] #the same above but change get_meaning
+  result = emoticons["get_meaning"][emoticon] 
   if result
     result
   else
